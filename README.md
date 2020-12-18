@@ -7,9 +7,11 @@ Logiciel réalisé par GONZALEZ Victor, B3 Devops
 
 Par contrainte de temps, je n'ai pas pu finir l'affichage du site, cependant le back-end est complet et fonctionnel :
 
+
 # src
 
 Dans le dossier src se trouvent chaque classe et servlet java pour le back-end, séparés selon le domaine pour lequel ils seront utilisés : Gestionnaire, Responsable, Mécanicien et Global pour ceux employés dans l'application dans son ensemble.
+
 
 ## Global\Class\Launch
 Class Java qui aurait permit d'initialiser les valeurs dès l'ouverture de l'application. Je n'ai pas eu le temps de lier cela au reste du projet.
@@ -26,3 +28,8 @@ La Class Java "Reparation" qui permet au mécanicien d'enregistrer les réparati
 
 ## Mechanician\Servlet\addReparation
 Ce Servlet a pour but de récupérer les détails d'une réparation entré par le mécanicien via un formulaire sur sa page dédiée afin de créer un nouvel Objet "Reparation" grâce à celles-ci. La Reparation ainsi créée va automatiquement être ajoutée dans la propriété "ListeReparation" de l'Objet "Voiture" concerné (Stocké dans une ArrayList" et ensuite actualisé dans la session / l'application.
+
+
+
+# Server
+Ce dossier contient le server.xml qui contien les realms et contraintes de sécurité pour l'autorisation et l'authentification sur le site; et tomcat-users.xml qui contient la liste des roles et users.
